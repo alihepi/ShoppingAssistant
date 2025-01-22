@@ -1,0 +1,244 @@
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+}
+
+.main-content {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/* Brand Section */
+.brand-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.brand-title {
+    font-size: 4rem;
+    color: #2D9CDB;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1s ease-out;
+}
+
+.brand-subtitle {
+    font-size: 1.5rem;
+    color: #4F4F4F;
+    margin-top: 0.5rem;
+    animation: fadeIn 1s ease-out 0.5s both;
+}
+
+/* Info Section */
+.info-section {
+    text-align: center;
+    animation: fadeIn 1s ease-out 0.7s both;
+}
+
+.info-section h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: #2D9CDB;
+    margin: 1rem 0;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Action Section */
+.action-section {
+    text-align: center;
+    margin-top: 2rem;
+    animation: fadeIn 1s ease-out 1s both;
+}
+
+.action-section h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.action-button {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.action-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-button {
+    background: #2D9CDB;
+    color: white;
+}
+
+.login-button:hover {
+    background: #2486BE;
+}
+
+.register-button {
+    background: #F2994A;
+    color: white;
+}
+
+.register-button:hover {
+    background: #E17F21;
+}
+
+.action-note {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    color: #666;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .brand-title {
+        font-size: 3rem;
+    }
+
+    .brand-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .action-button {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .main-container {
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    }
+
+    .brand-title {
+        color: #3DB4F2;
+    }
+
+    .brand-subtitle,
+    .info-section h2,
+    .action-section h2 {
+        color: #e0e0e0;
+    }
+
+    .feature-card {
+        background: #2d2d2d;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .feature-card h3 {
+        color: #3DB4F2;
+    }
+
+    .feature-card p {
+        color: #b0b0b0;
+    }
+
+    .action-note {
+        color: #b0b0b0;
+    }
+
+    .main-footer {
+        background: rgba(45, 45, 45, 0.8);
+        color: #b0b0b0;
+    }
+}

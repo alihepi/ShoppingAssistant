@@ -1,0 +1,14 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run install-admin-service && npm start --prefix admin-service\" \"npm run install-gateway && npm start --prefix gateway\" \"npm run install-user-service && npm start --prefix user-service\"",
+    "dev": "echo \"This is the backend root\"",
+    "install-admin-service": "cd ./admin-service && npm install",
+    "install-gateway": "cd ./gateway && npm install",
+    "install-user-service": "cd ./user-service && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

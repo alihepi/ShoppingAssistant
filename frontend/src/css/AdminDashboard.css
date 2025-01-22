@@ -1,0 +1,85 @@
+.admin-dashboard {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.settings-btn,
+.logout-btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  min-width: 7rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.settings-btn {
+  background-color: #2D9CDB;
+  color: white;
+}
+
+.settings-btn:hover {
+  background-color: #2486BE;
+}
+
+.logout-btn {
+  background-color: #F2994A;
+  color: white;
+}
+
+.logout-btn:hover {
+  background-color: #E0873D;
+}
+
+.dashboard-content {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.admin-info-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-info-card h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.admin-info-card p {
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.admin-info-card strong {
+  color: #333;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  font-size: 1.2rem;
+  color: #666;
+}

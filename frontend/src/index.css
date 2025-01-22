@@ -1,0 +1,17 @@
+.k1{
+    background: red;
+}
+.k2{
+    background: blue;
+}
+.k3{
+    background: green;
+}
+
+.full-h{
+    min-height: 100%;
+}
+
+.full-w{
+    min-width: 100%;
+}

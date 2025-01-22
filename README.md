@@ -181,6 +181,6 @@ Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICEN
 
 ## İletişim
 
-Your Name - [@alihappy_](https://www.instagram.com/alihappy_) - aliimutlu@hotmail.com
+Ali Mutlu - [@alihappy_](https://www.instagram.com/alihappy_) - aliimutlu@hotmail.com
 
 Project Link: [https://github.com/alihepi/ShoppingAssistant](https://github.com/alihepi/ShoppingAssistant)
